@@ -14,8 +14,9 @@ function preload() {
 }
 
 function setup() {
-  const canvas = createCanvas(600, 600, WEBGL);
-  canvas.parent('canvas-container');
+  const newSize = (3/4) * min(windowWidth, windowHeight); 
+  const canvas = createCanvas(newSize, newSize, WEBGL); 
+  canvas.parent('canvas-container'); 
   
   cueva_sonido.setLoop(true); cueva_sonido.setVolume(0.5);
   
