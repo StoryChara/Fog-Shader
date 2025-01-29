@@ -22,6 +22,7 @@
   <!-- PLEASE NO CHANGES BELOW THIS LINE (UNTIL I SAY SO) -->
   <script language="javascript" type="text/javascript" src="libraries/p5.min.js"></script>
   <script language="javascript" type="text/javascript" src="libraries/p5.sound.min.js"></script>
+  <script language="javascript" type="text/javascript" src="shader.js"></script>
   <script language="javascript" type="text/javascript" src="Fog_Shader.js"></script>
   <!-- OK, YOU CAN MAKE CHANGES BELOW THIS LINE AGAIN -->
 
@@ -29,6 +30,11 @@
     @font-face {
       font-family: "Minecraft Font";
       src: url("resources/MinecraftEvenings-lgvPd.ttf") format("truetype");
+    }
+    
+    @font-face {
+      font-family: "Minecraft Regular Font";
+      src: url("resources/MinecraftRegular-Bmg3.otf") format("opentype");
     }
 
     body {
@@ -42,6 +48,11 @@
       color: white;
       font-family: "Minecraft Font", sans-serif;
       text-align: center;
+    }
+    
+    .subtitle { 
+      font-family: "Minecraft Regular Font";
+      font-size: 15px; 
     }
 
     #canvas-container {
@@ -62,8 +73,9 @@
   <div id="canvas-container"></div> 
 
   <footer>
-     <p>Fog Shader</p>
-    </footer>
+    <p>Fog Shader</p>
+    <div class="subtitle">Modifica los deslizadores de abajo para cambiar los parámetros de la niebla.</div>
+  </footer>
 </body>
 
 </html>
